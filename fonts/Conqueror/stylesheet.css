@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Conqueror Text';
+    src: url('ConquerorText-SemiBold.eot');
+    src: local('Conqueror Text SemiBold'), local('ConquerorText-SemiBold'),
+        url('ConquerorText-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('ConquerorText-SemiBold.woff2') format('woff2'),
+        url('ConquerorText-SemiBold.woff') format('woff'),
+        url('ConquerorText-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conqueror Text';
+    src: url('ConquerorText-Bold.eot');
+    src: local('Conqueror Text Bold'), local('ConquerorText-Bold'),
+        url('ConquerorText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ConquerorText-Bold.woff2') format('woff2'),
+        url('ConquerorText-Bold.woff') format('woff'),
+        url('ConquerorText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Conqueror Text';
+    src: url('ConquerorText.eot');
+    src: local('Conqueror Text'), local('ConquerorText'),
+        url('ConquerorText.eot?#iefix') format('embedded-opentype'),
+        url('ConquerorText.woff2') format('woff2'),
+        url('ConquerorText.woff') format('woff'),
+        url('ConquerorText.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conqueror Text';
+    src: url('ConquerorText-MediumItalic.eot');
+    src: local('Conqueror Text Medium Italic'), local('ConquerorText-MediumItalic'),
+        url('ConquerorText-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('ConquerorText-MediumItalic.woff2') format('woff2'),
+        url('ConquerorText-MediumItalic.woff') format('woff'),
+        url('ConquerorText-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Conqueror Text';
+    src: url('ConquerorText-SemiBoldItalic.eot');
+    src: local('Conqueror Text SemiBold Italic'), local('ConquerorText-SemiBoldItalic'),
+        url('ConquerorText-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('ConquerorText-SemiBoldItalic.woff2') format('woff2'),
+        url('ConquerorText-SemiBoldItalic.woff') format('woff'),
+        url('ConquerorText-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Conqueror Text';
+    src: url('ConquerorText-ExtraBoldItalic.eot');
+    src: local('Conqueror Text ExtraBold Italic'), local('ConquerorText-ExtraBoldItalic'),
+        url('ConquerorText-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('ConquerorText-ExtraBoldItalic.woff2') format('woff2'),
+        url('ConquerorText-ExtraBoldItalic.woff') format('woff'),
+        url('ConquerorText-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Conqueror Text';
+    src: url('ConquerorText-SemiBold.eot');
+    src: local('Conqueror Text SemiBold'), local('ConquerorText-SemiBold'),
+        url('ConquerorText-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('ConquerorText-SemiBold.woff2') format('woff2'),
+        url('ConquerorText-SemiBold.woff') format('woff'),
+        url('ConquerorText-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conqueror Text';
+    src: url('ConquerorText-Italic.eot');
+    src: local('Conqueror Text Italic'), local('ConquerorText-Italic'),
+        url('ConquerorText-Italic.eot?#iefix') format('embedded-opentype'),
+        url('ConquerorText-Italic.woff2') format('woff2'),
+        url('ConquerorText-Italic.woff') format('woff'),
+        url('ConquerorText-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Conqueror Text';
+    src: url('ConquerorText-Medium.eot');
+    src: local('Conqueror Text Medium'), local('ConquerorText-Medium'),
+        url('ConquerorText-Medium.eot?#iefix') format('embedded-opentype'),
+        url('ConquerorText-Medium.woff2') format('woff2'),
+        url('ConquerorText-Medium.woff') format('woff'),
+        url('ConquerorText-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conqueror Text';
+    src: url('ConquerorText-Black.eot');
+    src: local('Conqueror Text  Black'), local('ConquerorText-Black'),
+        url('ConquerorText-Black.eot?#iefix') format('embedded-opentype'),
+        url('ConquerorText-Black.woff2') format('woff2'),
+        url('ConquerorText-Black.woff') format('woff'),
+        url('ConquerorText-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conqueror Text';
+    src: url('ConquerorText-Bold.eot');
+    src: local('Conqueror Text Bold'), local('ConquerorText-Bold'),
+        url('ConquerorText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ConquerorText-Bold.woff2') format('woff2'),
+        url('ConquerorText-Bold.woff') format('woff'),
+        url('ConquerorText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conqueror Text';
+    src: url('ConquerorText-BoldItalic.eot');
+    src: local('Conqueror Text Bold Italic'), local('ConquerorText-BoldItalic'),
+        url('ConquerorText-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('ConquerorText-BoldItalic.woff2') format('woff2'),
+        url('ConquerorText-BoldItalic.woff') format('woff'),
+        url('ConquerorText-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Conqueror Text';
+    src: url('ConquerorText-ExtraBold.eot');
+    src: local('Conqueror Text ExtraBold'), local('ConquerorText-ExtraBold'),
+        url('ConquerorText-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('ConquerorText-ExtraBold.woff2') format('woff2'),
+        url('ConquerorText-ExtraBold.woff') format('woff'),
+        url('ConquerorText-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conqueror Text';
+    src: url('ConquerorText-BlackItalic.eot');
+    src: local('Conqueror Text Black Italic'), local('ConquerorText-BlackItalic'),
+        url('ConquerorText-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('ConquerorText-BlackItalic.woff2') format('woff2'),
+        url('ConquerorText-BlackItalic.woff') format('woff'),
+        url('ConquerorText-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
