@@ -1,0 +1,5 @@
+node_modules*.ttf
+*.woff*
+*.eot
+*.jpg
+*.png
