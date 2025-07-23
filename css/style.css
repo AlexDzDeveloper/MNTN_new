@@ -417,3 +417,70 @@ body {
   top: 0;
   bottom: 0px;
 }
+
+
+@media (max-width: 1200px) {
+	body {
+		max-width: 1200px;
+	}
+
+	.header {
+	}
+
+	.wrapper {
+	}
+
+	.section_nav {
+		margin-bottom: 150px;
+		padding: 0 15px;
+	}
+
+	.logo {
+		font-size: 28px;
+	}
+
+	.nav {
+		padding: 8px;
+		font-size: 16px;
+	}
+
+	.nav ul {
+	}
+
+	.nav li + li{
+		margin-left: 40px;
+	}
+
+	.nav a {
+		transition: color 0.3s ease-in;
+	}
+
+	.nav a:hover {
+		color: #FBD784;
+	}
+
+	.account {
+		transition: color 0.3s ease-in;
+		font-size: 16px;
+	}
+
+	.account:hover {
+		color: #FBD784;
+	}
+
+	.hero-title {
+		font-size: 60px;
+	}
+
+	.hero-category {
+		font-size: 16px;
+	}
+
+	.hero-scroll {
+		font-size: 16px;
+	}
+
+	.hero-scroll::after {
+		zoom: 80%;
+	}
+}
