@@ -424,11 +424,11 @@ body {
 		max-width: 1200px;
 	}
 
-	.header {
+	/* .header {
 	}
 
 	.wrapper {
-	}
+	} */
 
 	.section_nav {
 		margin-bottom: 150px;
@@ -444,8 +444,8 @@ body {
 		font-size: 16px;
 	}
 
-	.nav ul {
-	}
+	/* .nav ul {
+	} */
 
 	.nav li + li{
 		margin-left: 40px;
@@ -488,20 +488,19 @@ body {
 		max-width: 1200px;
 		padding-left: 20px;
 		padding-right: 20px;
-	/* display: flex; */
 	}
 
 	.article {
-		margin-bottom: 175px;
+		margin-bottom: 125px;
 	}
 
-	.article:nth-child(even) {
-	/* background: #FBD784; */
+	/* .article:nth-child(even) {
 		flex-direction: row-reverse;
-	}
+	} */
 
 	.article-wrapper {
-		padding-left: 130px;
+		padding-left: 100px;
+		padding-right: 20px;
 		max-width: 782px;
 	}
 
@@ -522,14 +521,13 @@ body {
 	}
 
 	.article-title {
-	margin-bottom: 27px;
-	max-width: 555px;
-	font-size: 60px;
+		margin-bottom: 27px;
+		max-width: 555px;
+		font-size: 42px;
 	}
 
 	.article-text  {
 		font-size: 16px;
-		margin-right: 10px;
 		margin-bottom: 27px;
 		font-weight: 500;
 		line-height: 1.6;
@@ -545,4 +543,108 @@ body {
 		zoom: 80%;
 	}
 
+
+	/* FOOTER */
+
+	.footer {
+		padding-bottom: 68px;
+		max-width: 1200px;
+		height: 320px;
+	}
+
+	.container {
+		margin-bottom: 0;
+		font-size: 16px;
+		padding: 20px;
+	}
+
+	.footer-copyright {
+		height: 220px;
+	}
+
+	.footer-copyright-logo {
+		margin-bottom: 20px;
+	}
+
+	.footer-copyright-desc {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.6;
+		max-width: 303px;
+	}
+
+	.footer-copyright-terms {
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+
+	.footer-nav-wrapper {
+		height: 220px;
+	}
+
+	.footer-nav + .footer-nav {
+		margin-left: 112px;
+	}
+
+	.footer-nav {
+		max-width: 180px;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.6;
+	}
+
+	.footer-nav-tittle {
+		font-size: 20px;
+		margin-bottom: 20px;
+		font-weight: 600;
+	}
+
+
+	/* .footer-nav ul {
+	margin: 0;
+	padding: 0;
+	} */
+
+	.footer-nav li {
+		font-size: 16px;
+		margin-bottom: 8px;
+	}
+
+	/* .footer-nav li:last-child {
+	margin-bottom: 0;
+	} */
+
+	/* .footer-nav a {
+	position: relative;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding-bottom: 5px;
+	} */
+
+
+	/* .footer-nav a::after {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	left: 0;
+	top: 0;
+	bottom: -10px;
+	opacity: 0;
+	transition: all 0.2s ease-in;
+	} */
+
+	/* .footer-nav a:hover::after {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	left: 0;
+	top: 0;
+	bottom: 0px;
+	} */
 }
