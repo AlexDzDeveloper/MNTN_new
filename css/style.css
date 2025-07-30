@@ -918,7 +918,8 @@ body {
 
 	.section_nav {
 		margin-bottom: 60px;
-		width: 320px;
+		width: 300px;
+		padding: 0;
 	}
 
 	.logo {
@@ -935,7 +936,7 @@ body {
 	}
 
 	.hero-wrapper {
-		width: 320px;
+		width: 300px;
 	}
 
 	.hero-category {
