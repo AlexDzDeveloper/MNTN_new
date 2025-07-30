@@ -27,6 +27,10 @@ body {
 	align-items: center;
 }
 
+.hamburger {
+	display: none;
+}
+
 .section_nav {
 	margin-bottom: 198px;
 	padding: 0 15px;
@@ -877,8 +881,12 @@ body {
 	}
 
 	.wrapper {
-		width: 320px;
+		margin: 0;
 		padding: 0;
+		padding-left: 20px;
+		height: 60px;
+		width: 320px;
+		max-width: 444px;
 	}
 
 	.hamburger {
