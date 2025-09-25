@@ -82,6 +82,12 @@ body {
 }
 
 .account {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+
+.account_text {
 	padding: 2px;
 	display: flex;
 	font-family: 'Gilroy';
@@ -92,7 +98,19 @@ body {
 	transition: color 0.2s ease-in;
 }
 
-.account:hover {
+.account_icon {
+	display: block;
+	width: 25px;
+	height: 25px;
+	/* background-image: url("../images/icons/account.svg"); */
+}
+
+.account_icon:hover svg path{
+	fill: #FBD784;
+	transition: 0.25s fill ease-in-out;
+}
+
+.account_text:hover {
   	color: #FBD784;
 }
 
@@ -151,13 +169,20 @@ body {
 
 .hero-scroll {
 	display: inline-block;
-	position: relative; ;
+	position: relative;
+	left: 280px;
 	padding-right: 32px;
 	font-family: 'Gilroy';
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 1.222;
 	color: #FFFFFF;
+}
+
+.hero-scroll:hover {
+	cursor: pointer;
+	color:#FBD784;
+	transition: 0.25s color ease-in-out;
 }
 
 .hero-scroll::after {
@@ -169,8 +194,13 @@ body {
 	width: 16px;
 	height: 24px;
 	transform: translateY(-50%);
-	background-image: url(/images/icons/down.svg);
+	background-image: url("../images/icons/down.svg");
 }
+
+/* .hero-scroll::after:hover {
+	color:#FBD784;
+	transition: 0.25s color ease-in-out;
+} */
 
 /* MAIN */
 
@@ -277,7 +307,7 @@ body {
 	width: 24px;
 	height: 16px;
 	transform: translateY(-50%);
-	background-image: url(/images/icons/right.svg);
+	background-image: url("../images/icons/right.svg");
 }
 
 .article-image {
