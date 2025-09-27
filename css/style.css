@@ -303,7 +303,9 @@ body {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 1.222;
-	color: #FBD784;
+	color: #fff;
+	/* color: #FBD784; */
+	transition: transform 0.8s ease, color 1.2s ease;
 }
 
 .article-read-more::after {
@@ -316,6 +318,11 @@ body {
 	height: 16px;
 	transform: translateY(-50%);
 	background-image: url("../images/icons/right.svg");
+}
+
+.article-read-more:hover {
+	transform: scale(1.08);
+	color: #FBD784;
 }
 
 .article-image {
