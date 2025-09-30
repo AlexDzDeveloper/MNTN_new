@@ -199,15 +199,8 @@
 			padding: 8px;
 			font-size: 16px;
 
-			li + li {
-				// margin-left: 40px;
-			}
-
 			a {
 				transition: color 0.3s ease-in;
-				&:hover {
-					// color: nullstyle.$main-color;
-				}
 			}
 		}
 
