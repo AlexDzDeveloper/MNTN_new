@@ -18,3 +18,27 @@ body {
 	max-width: 1920px;
 	color: #fff;
 }
+
+@media (max-width: 1200px) {
+	body {
+		max-width: 1200px;
+	}
+}
+
+@media (max-width: 991px) {
+	body {
+		max-width: 900px;
+	}
+}
+
+@media (max-width: 767px) {
+	body {
+		max-width: 766px;
+	}
+}
+
+@media (max-width: 575px) {
+	body {
+		max-width: 575px;
+	}
+}
