@@ -126,7 +126,7 @@
 		padding-left: 104px;
 		letter-spacing: 6px;
 		text-transform: uppercase;
-		color: #FBD784;
+		color: nullstyle.$main-color;
 
 		&::before {
 			content: "";
@@ -137,7 +137,7 @@
 			transform: translateY(-50%);
 			width: 72px;
 			height: 2px;
-			background-color: #FBD784;
+			background-color: nullstyle.$main-color;
 		}
 	}
 	&-title {
@@ -165,7 +165,7 @@
 
 		&:hover {
 			cursor: pointer;
-			color:#FBD784;
+			color: nullstyle.$main-color;
 			transition: 0.25s color ease-in-out;
 		}
 
@@ -337,7 +337,7 @@
 			display: block;
 			width: 30px;
 			height: 2px;
-			background-color: #FBD784;
+			background-color: nullstyle.$main-color;
 		}
 
 		.long {

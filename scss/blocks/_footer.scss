@@ -83,8 +83,19 @@
 				margin: 0px;
 				margin-bottom: 11px;
 
+				&:first-child {
+					margin-top: 15px;
+				}
+
 				&:last-child {
 					margin-bottom: 0;
+				}
+
+				a {
+					&:hover {
+						color: nullstyle.$main-color;
+						transition: color .3s ease;
+					}
 				}
 			}
 		}

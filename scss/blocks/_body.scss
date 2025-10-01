@@ -8,12 +8,23 @@
 	padding-right: 15px;
 }
 
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: start;
+	flex-wrap: nowrap;
+	// width: 200%;
+}
+
 .article {
 	margin-bottom: 200px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	gap: 30px;
+	visibility: visible;
+	width: 100%;
 
 	&:nth-child(even) {
 		flex-direction: row-reverse;
@@ -115,6 +126,159 @@
 
 	&-image {
 		display: block;
+	}
+}
+
+.hiker-assessment {
+	// display: none;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+
+	&_header {
+		margin-bottom: 27px;
+		font-family: 'Conqueror Text Bold';
+		font-weight: 500;
+		font-size: 64px;
+		line-height: 1.2;
+		color: #FFFFFF;
+		&.small {
+			font-size: 50px;
+		}
+	}
+
+	&_subheader {
+		font-family: 'Conqueror Text Bold';
+		font-style: italic;
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 1.6;
+		letter-spacing: -1px;
+		color: #FFFFFF;
+	}
+
+	&_quality {
+		&__list {
+			margin-top: 20px;
+			li {
+				font-family: 'Conqueror Text Bold';
+				font-style: italic;
+				font-weight: 500;
+				font-size: 22px;
+				line-height: 1.6;
+				color: #FFFFFF;
+				// list-style-type: square;
+				list-style-type: none;
+				span {
+					font-family: 'Conqueror Text Bold';
+					font-style: normal;
+					font-weight: 500;
+					font-size: 23px;
+					line-height: 1.2;
+					color: nullstyle.$main-color;
+					text-decoration: underline;
+				}
+			}
+		}
+
+		&__advice {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			margin: 20px 0;
+
+
+			.tip {
+				font-family: 'Conqueror Text Bold';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 1.4;
+				color: nullstyle.$main-color;
+				text-decoration: none;
+
+				.text {
+					font-family: 'Conqueror Text Bold';
+					font-style: normal;
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 1.4;
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+
+		}
+	}
+
+	&_links {
+		&__ukraine, &__world {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			a {
+				font-family: 'Conqueror Text Bold';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 23px;
+				line-height: 1.2;
+				color: #32a9ef;
+				text-decoration: none;
+			}
+
+			p {
+				font-family: 'Conqueror Text Bold';
+				font-style: italic;
+				font-weight: 500;
+				font-size: 22px;
+				line-height: 1.6;
+				color: #FFFFFF;
+			}
+
+
+		}
+	}
+
+	&_wish {
+		margin-top: 10px;
+		font-family: 'Conqueror Text Bold';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 1.4;
+		color: #fff;
+		text-decoration: underline;
+	}
+
+	&_back {
+		display: inline-block;
+		position: relative;
+		font-family: 'Gilroy';
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 1.222;
+		color: #fff;
+		transition: transform 0.8s ease, color 1.2s ease;
+		margin: 20px 0;
+		padding-left: 40px;
+
+		&::before {
+			display: block;
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 50%;
+			width: 24px;
+			height: 16px;
+			transform: translateY(-50%) rotate(180deg);
+			background-image: url("../images/icons/right.svg");
+			background-repeat: no-repeat;
+		}
+
+		&:hover {
+			transform: scale(1.08);
+			color: nullstyle.$main-color;
+		}
 	}
 }
 
