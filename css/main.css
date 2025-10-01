@@ -333,12 +333,22 @@
   padding-right: 15px;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: nowrap;
+}
+
 .article {
   margin-bottom: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  visibility: visible;
+  width: 100%;
 }
 .article:nth-child(even) {
   flex-direction: row-reverse;
@@ -430,6 +440,137 @@
 }
 .article-image {
   display: block;
+}
+
+.hiker-assessment {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.hiker-assessment_header {
+  margin-bottom: 27px;
+  font-family: "Conqueror Text Bold";
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+.hiker-assessment_header.small {
+  font-size: 50px;
+}
+.hiker-assessment_subheader {
+  font-family: "Conqueror Text Bold";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.6;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+}
+.hiker-assessment_quality__list {
+  margin-top: 20px;
+}
+.hiker-assessment_quality__list li {
+  font-family: "Conqueror Text Bold";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  list-style-type: none;
+}
+.hiker-assessment_quality__list li span {
+  font-family: "Conqueror Text Bold";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 1.2;
+  color: #FBD784;
+  text-decoration: underline;
+}
+.hiker-assessment_quality__advice {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+}
+.hiker-assessment_quality__advice .tip {
+  font-family: "Conqueror Text Bold";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #FBD784;
+  text-decoration: none;
+}
+.hiker-assessment_quality__advice .tip .text {
+  font-family: "Conqueror Text Bold";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #fff;
+  text-decoration: none;
+}
+.hiker-assessment_links__ukraine, .hiker-assessment_links__world {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.hiker-assessment_links__ukraine a, .hiker-assessment_links__world a {
+  font-family: "Conqueror Text Bold";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 1.2;
+  color: #32a9ef;
+  text-decoration: none;
+}
+.hiker-assessment_links__ukraine p, .hiker-assessment_links__world p {
+  font-family: "Conqueror Text Bold";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #FFFFFF;
+}
+.hiker-assessment_wish {
+  margin-top: 10px;
+  font-family: "Conqueror Text Bold";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #fff;
+  text-decoration: underline;
+}
+.hiker-assessment_back {
+  display: inline-block;
+  position: relative;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.222;
+  color: #fff;
+  transition: transform 0.8s ease, color 1.2s ease;
+  margin: 20px 0;
+  padding-left: 40px;
+}
+.hiker-assessment_back::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 24px;
+  height: 16px;
+  transform: translateY(-50%) rotate(180deg);
+  background-image: url("../images/icons/right.svg");
+  background-repeat: no-repeat;
+}
+.hiker-assessment_back:hover {
+  transform: scale(1.08);
+  color: #FBD784;
 }
 
 @media (max-width: 1200px) {
@@ -661,8 +802,15 @@
   margin: 0px;
   margin-bottom: 11px;
 }
+.footer-nav ul li:first-child {
+  margin-top: 15px;
+}
 .footer-nav ul li:last-child {
   margin-bottom: 0;
+}
+.footer-nav ul li a:hover {
+  color: #FBD784;
+  transition: color 0.3s ease;
 }
 .footer-nav a {
   position: relative;
