@@ -344,6 +344,7 @@
 .article {
   margin-bottom: 200px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
@@ -569,6 +570,66 @@
   background-repeat: no-repeat;
 }
 .hiker-assessment_back:hover {
+  transform: scale(1.08);
+  color: #FBD784;
+}
+
+.hiking-gear {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.hiking-gear_header {
+  margin-bottom: 27px;
+  font-family: "Conqueror Text Bold";
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+.hiking-gear_subheader {
+  font-family: "Conqueror Text Bold";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.6;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+}
+.hiking-gear_text {
+  font-family: "Conqueror Text Bold";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  list-style-type: none;
+}
+.hiking-gear_back {
+  display: inline-block;
+  position: relative;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.222;
+  color: #fff;
+  transition: transform 0.8s ease, color 1.2s ease;
+  margin: 20px 0;
+  padding-left: 40px;
+}
+.hiking-gear_back::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 24px;
+  height: 16px;
+  transform: translateY(-50%) rotate(180deg);
+  background-image: url("../images/icons/right.svg");
+  background-repeat: no-repeat;
+}
+.hiking-gear_back:hover {
   transform: scale(1.08);
   color: #FBD784;
 }
