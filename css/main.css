@@ -443,11 +443,6 @@
   display: block;
 }
 
-.hiker-assessment {
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
 .hiker-assessment_header {
   margin-bottom: 27px;
   font-family: "Conqueror Text Bold";
@@ -574,11 +569,6 @@
   color: #FBD784;
 }
 
-.hiking-gear {
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
 .hiking-gear_header {
   margin-bottom: 27px;
   font-family: "Conqueror Text Bold";
