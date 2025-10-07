@@ -443,6 +443,12 @@
   display: block;
 }
 
+.hiker-assessment {
+  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 .hiker-assessment_header {
   margin-bottom: 27px;
   font-family: "Conqueror Text Bold";
@@ -569,6 +575,12 @@
   color: #FBD784;
 }
 
+.hiking-gear {
+  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 .hiking-gear_header {
   margin-bottom: 27px;
   font-family: "Conqueror Text Bold";
@@ -594,6 +606,83 @@
   line-height: 1.6;
   color: #FFFFFF;
   list-style-type: none;
+}
+.hiking-gear_table tbody tr td {
+  font-style: normal;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.38;
+  color: #FFFFFF;
+  margin-bottom: 27px;
+  padding: 8px;
+  max-height: 135px;
+  min-width: 80px;
+  writing-mode: vertical-rl;
+  transform: rotate(200deg);
+}
+.hiking-gear_table tbody tr th {
+  font-style: normal;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  background-color: rgba(25, 80, 63, 0.56);
+  border: 1px solid #FBD784;
+  border-radius: 15px;
+}
+.hiking-gear_table tbody tr .lvl {
+  background-color: inherit;
+  border: none;
+  font-size: 20px;
+  line-height: 1.78;
+  padding: 0 3px;
+}
+.hiking-gear_platforms {
+  margin-top: 20px;
+  font-family: "Conqueror Text Bold";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  list-style-type: none;
+}
+.hiking-gear_platforms__title {
+  color: #FBD784;
+}
+.hiking-gear_platforms__text {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.hiking-gear_platforms__links span {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+.hiking-gear_platforms__links span a {
+  font-family: "Conqueror Text Bold";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 1.6;
+  color: #32a9ef;
+  text-decoration: none;
+}
+.hiking-gear_platforms__links span a:hover {
+  text-decoration: underline;
+  color: #FBD784;
+  transition: all 0.3s ease;
+}
+.hiking-gear_platforms__links span p {
+  font-family: "Conqueror Text Bold";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #FFFFFF;
 }
 .hiking-gear_back {
   display: inline-block;
