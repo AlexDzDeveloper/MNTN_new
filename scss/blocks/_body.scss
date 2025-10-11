@@ -146,11 +146,11 @@
 }
 
 .hiker-assessment {
-	// display: none;
 	// visibility: hidden;
 	// width: 0;
 	// height: 0;
 	display: flex;
+	// display: none;
 	flex-direction: column;
 	justify-content: center;
 
@@ -301,11 +301,11 @@
 }
 
 .hiking-gear {
-	// display: none;
 	// visibility: hidden;
 	// width: 0;
 	// height: 0;
 	display: flex;
+	// display: none;
 	flex-direction: column;
 	justify-content: center;
 
@@ -377,6 +377,10 @@
 			}
 
 		}
+	}
+
+	&_table-alt {
+		display: none;
 	}
 
 	&_platforms {
@@ -465,6 +469,7 @@
 
 .learn-map {
 	display: flex;
+	display: none;
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: start;
@@ -683,95 +688,131 @@
 
 	.hiker-assessment {
 
-	&_header {
-		font-size: 37px;
-		&.small {
-			font-size: 26px;
+		&_header {
+			font-size: 37px;
+			&.small {
+				font-size: 26px;
+			}
 		}
-	}
 
-	&_subheader {
-		font-size: 23px;
-	}
+		&_subheader {
+			font-size: 23px;
+		}
 
-	&_quality {
-		&__list {
-			margin-top: 20px;
-			li {
-				span {
+		&_quality {
+			&__list {
+				margin-top: 20px;
+				li {
+					span {
+						font-size: 20px;
+					}
+				}
+			}
+
+			&__advice {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				margin: 20px 0;
+			}
+		}
+
+		&_links {
+			&__ukraine, &__world {
+				display: flex;
+				flex-direction: row;
+				gap: 20px;
+				a {
+					min-width: 115px;
 					font-size: 20px;
+					white-space: nowrap;
 				}
-			}
-		}
 
-		&__advice {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			margin: 20px 0;
-
-
-			.tip {
-				.text {
+				p {
+					font-size: 18px;
 				}
-			}
 
+
+			}
 		}
 	}
 
-	&_links {
-		&__ukraine, &__world {
-			display: flex;
-			flex-direction: row;
-			gap: 20px;
-			a {
-				min-width: 115px;
-				font-size: 20px;
-				white-space: nowrap;
+	.hiking-gear {
+		display: flex;
+		// display: none;
+		flex-direction: column;
+		justify-content: center;
+
+		&_header {
+			font-size: 37px;
+		}
+
+		&_subheader {
+			font-size: 23px;
+		}
+
+		&_text {
+			margin-top: 10px;
+			font-size: 20px;
+		}
+
+		&_table {
+			tbody {
+				tr {
+					td {
+						font-size: 16px;
+						margin-bottom: 27px;
+						padding: 8px;
+						max-height: 120px;
+						min-width: 58px;
+						writing-mode: vertical-rl;
+						transform: rotate(200deg);
+					}
+					th {
+						font-size: 18px;
+					}
+
+					.lvl {
+						font-size: 18px;
+						padding: 0 3px;
+					}
+				}
+
+			}
+		}
+
+		&_platforms {
+
+			&__title {
+				font-size: 23px;
 			}
 
-			p {
+			&__text {
 				font-size: 18px;
+				line-height: 1.4;
 			}
 
-
-		}
-	}
-
-	&_wish {
-	}
-
-	&_back {
-		display: inline-block;
-		position: relative;
-		font-family: 'Gilroy';
-		font-weight: 700;
-		font-size: 18px;
-		line-height: 1.222;
-		color: #fff;
-		transition: transform 0.8s ease, color 1.2s ease;
-		margin: 20px 0;
-		padding-left: 40px;
-
-		&::before {
-			display: block;
-			content: "";
-			position: absolute;
-			left: 0;
-			top: 50%;
-			width: 24px;
-			height: 16px;
-			transform: translateY(-50%) rotate(180deg);
-			background-image: url("../images/icons/right.svg");
-			background-repeat: no-repeat;
+			&__links {
+				span {
+					a {
+						font-size: 20px;
+					}
+					p {
+						font-size: 18px;
+					}
+				}
+			}
 		}
 
-		&:hover {
-			transform: scale(1.08);
-			color: nullstyle.$main-color;
+		&_back {
+
+			&::before {
+			}
+
+			&:hover {
+			}
 		}
 	}
-}
 }
 
 @media (max-width: 991px) {
@@ -824,6 +865,139 @@
 			}
 		}
 	}
+
+	.hiker-assessment {
+
+		&_header {
+			font-size: 28px;
+			&.small {
+				font-size: 22px;
+			}
+		}
+
+		&_subheader {
+			font-size: 18px;
+		}
+
+		&_quality {
+			&__list {
+				margin-top: 20px;
+				li {
+					font-size: 16px;
+					span {
+						font-size: 18px;
+					}
+				}
+			}
+
+			&__advice {
+				.tip {
+					.text {
+						font-size: 16px;
+					}
+				}
+
+			}
+		}
+
+		&_links {
+			&__ukraine, &__world {
+				a {
+					min-width: 90px;
+					font-size: 18px;
+				}
+
+				p {
+					font-size: 16px;
+				}
+
+
+			}
+		}
+
+		&_wish {
+			font-size: 16px;
+		}
+
+		&_back {
+			font-size: 15px;
+
+			&::before {
+			}
+
+			&:hover {
+			}
+		}
+	}
+
+	.hiking-gear {
+
+		&_header {
+			font-size: 28px;
+		}
+
+		&_subheader {
+			font-size: 20px;
+		}
+
+		&_text {
+			font-size: 18px;
+		}
+
+		&_table {
+			tbody {
+				tr {
+					td {
+						min-width: 45px;
+						font-size: 14px;
+						max-height: 140px;
+						padding: 4px;
+					}
+					th {
+						font-size: 15px;
+					}
+
+					.lvl {
+						font-size: 14px;
+						padding: 0 2px;
+					}
+				}
+
+			}
+		}
+
+		&_platforms {
+
+			&__title {
+				font-size: 20px;
+			}
+
+			&__text {
+				font-size: 16px;
+			}
+
+			&__links {
+				span {
+					a {
+						font-size: 16px;
+					}
+					p {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+
+		&_back {
+			font-size: 15px;
+
+			&::before {
+			}
+
+			&:hover {
+			}
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -871,7 +1045,161 @@
 			}
 		}
 	}
+
+	.hiker-assessment {
+
+		&_header {
+			font-size: 28px;
+			&.small {
+				font-size: 22px;
+			}
+		}
+
+		&_subheader {
+			font-size: 16px;
+		}
+
+		&_quality {
+			&__list {
+				margin-top: 20px;
+				li {
+					font-size: 14px;
+					span {
+						font-size: 16px;
+					}
+				}
+			}
+
+			&__advice {
+				.tip {
+					.text {
+						font-size: 16px;
+					}
+				}
+
+			}
+		}
+
+		&_links {
+			&__ukraine, &__world {
+				a {
+					min-width: 90px;
+					font-size: 17px;
+				}
+
+				p {
+					font-size: 16px;
+				}
+
+
+			}
+		}
+
+		&_wish {
+			font-size: 14px;
+		}
+
+		&_back {
+			font-size: 14px;
+
+			&::before {
+			}
+
+			&:hover {
+			}
+		}
+	}
+
+	.hiking-gear {
+
+		&_header {
+			font-size: 28px;
+		}
+
+		&_subheader {
+			font-size: 20px;
+		}
+
+		&_text {
+			font-size: 18px;
+		}
+
+		&_table {
+			display: none;
+		}
+
+		&_table-alt {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-start;
+
+			tr {
+				display: block;
+				margin-top: 10px;
+				background-color: rgba(25 80 63 / 56%);
+				border: 1px solid nullstyle.$main-color;
+				border-radius: 15px;
+				padding: 5px;
+				td {
+					width: 100px;
+					font-style: normal;
+					font-family: 'Gilroy';
+					font-weight: 700;
+					line-height: 1.38;
+					color: #FFFFFF;
+					font-size: 18px;
+					line-height: 1.78;
+					padding: 0 8px 0 0;
+				}
+				th {
+					p {
+						font-style: normal;
+						font-family: 'Gilroy';
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 1.2;
+						color: #FFFFFF;
+						text-align: left;
+					}
+				}
+			}
+		}
+
+		&_platforms {
+
+			&__title {
+				font-size: 20px;
+			}
+
+			&__text {
+				font-size: 16px;
+			}
+
+			&__links {
+				span {
+					a {
+						font-size: 16px;
+					}
+					p {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+
+		&_back {
+			font-size: 15px;
+
+			&::before {
+			}
+
+			&:hover {
+			}
+		}
+	}
 }
+
 
 @media (max-width: 575px) {
 	.main {
@@ -909,6 +1237,163 @@
 		&-image {
 			img {
 				width: 300px;
+			}
+		}
+	}
+
+	.hiker-assessment {
+
+		&_header {
+			font-size: 20px;
+			&.small {
+				font-size: 18px;
+			}
+		}
+
+		&_subheader {
+			font-size: 15px;
+		}
+
+		&_quality {
+			&__list {
+				margin-top: 20px;
+				li {
+					font-size: 14px;
+					span {
+						font-size: 16px;
+					}
+				}
+			}
+
+			&__advice {
+				.tip {
+					font-size: 16px;
+					.text {
+						font-size: 14px;
+					}
+				}
+
+			}
+		}
+
+		&_links {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			&__ukraine, &__world {
+				a {
+					min-width: 90px;
+					font-size: 15px;
+				}
+
+				p {
+					font-size: 14px;
+				}
+
+
+			}
+		}
+
+		&_wish {
+			margin-top: 20px;
+			font-size: 14px;
+		}
+
+		&_back {
+			font-size: 14px;
+
+			&::before {
+			}
+
+			&:hover {
+			}
+		}
+	}
+
+	.hiking-gear {
+
+		&_header {
+			font-size: 20px;
+		}
+
+		&_subheader {
+			font-size: 18px;
+		}
+
+		&_text {
+			font-size: 15px;
+		}
+
+
+		&_table-alt {
+
+			tr {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin-top: 10px;
+				background-color: rgba(25 80 63 / 56%);
+				border: 1px solid nullstyle.$main-color;
+				border-radius: 15px;
+				padding: 10px;
+				td {
+					width: auto;
+					font-size: 16px;
+					padding: 0;
+					font-weight: 500;
+					text-decoration: underline;
+				}
+				th {
+					p {
+						font-style: normal;
+						font-family: 'Gilroy';
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 1.2;
+						color: #FFFFFF;
+						text-align: left;
+					}
+				}
+			}
+		}
+
+		&_platforms {
+
+			&__title {
+				font-size: 16px;
+			}
+
+			&__text {
+				font-size: 14px;
+			}
+
+			&__links {
+				margin-top: 10px;
+				span {
+					align-items: center;
+					text-align: center;
+					a {
+						font-size: 16px;
+						line-height: 1.3;
+					}
+					p {
+						font-size: 14px;
+						font-style: normal;
+						text-align: left;
+						padding-left: 10px;
+					}
+				}
+			}
+		}
+
+		&_back {
+			font-size: 14px;
+
+			&::before {
+			}
+
+			&:hover {
 			}
 		}
 	}

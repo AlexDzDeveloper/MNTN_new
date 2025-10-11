@@ -248,8 +248,13 @@
     width: auto;
     font-size: 22px;
   }
+  .hero {
+    max-width: 546px;
+  }
   .hero-wrapper {
-    width: 576px;
+    padding: 0;
+    margin: 0;
+    width: 546px;
   }
   .hero-title {
     font-size: 40px;
@@ -638,6 +643,9 @@
   line-height: 1.78;
   padding: 0 3px;
 }
+.hiking-gear_table-alt {
+  display: none;
+}
 .hiking-gear_platforms {
   margin-top: 20px;
   font-family: "Conqueror Text Bold";
@@ -714,6 +722,7 @@
 
 .learn-map {
   display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: start;
@@ -936,33 +945,49 @@
   .hiker-assessment_links__ukraine p, .hiker-assessment_links__world p {
     font-size: 18px;
   }
-  .hiker-assessment_back {
-    display: inline-block;
-    position: relative;
-    font-family: "Gilroy";
-    font-weight: 700;
+  .hiking-gear {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hiking-gear_header {
+    font-size: 37px;
+  }
+  .hiking-gear_subheader {
+    font-size: 23px;
+  }
+  .hiking-gear_text {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .hiking-gear_table tbody tr td {
+    font-size: 16px;
+    margin-bottom: 27px;
+    padding: 8px;
+    max-height: 120px;
+    min-width: 58px;
+    writing-mode: vertical-rl;
+    transform: rotate(200deg);
+  }
+  .hiking-gear_table tbody tr th {
     font-size: 18px;
-    line-height: 1.222;
-    color: #fff;
-    transition: transform 0.8s ease, color 1.2s ease;
-    margin: 20px 0;
-    padding-left: 40px;
   }
-  .hiker-assessment_back::before {
-    display: block;
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 24px;
-    height: 16px;
-    transform: translateY(-50%) rotate(180deg);
-    background-image: url("../images/icons/right.svg");
-    background-repeat: no-repeat;
+  .hiking-gear_table tbody tr .lvl {
+    font-size: 18px;
+    padding: 0 3px;
   }
-  .hiker-assessment_back:hover {
-    transform: scale(1.08);
-    color: #FBD784;
+  .hiking-gear_platforms__title {
+    font-size: 23px;
+  }
+  .hiking-gear_platforms__text {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  .hiking-gear_platforms__links span a {
+    font-size: 20px;
+  }
+  .hiking-gear_platforms__links span p {
+    font-size: 18px;
   }
 }
 @media (max-width: 991px) {
@@ -1004,6 +1029,77 @@
   .article-image img {
     width: 400px;
   }
+  .hiker-assessment_header {
+    font-size: 28px;
+  }
+  .hiker-assessment_header.small {
+    font-size: 22px;
+  }
+  .hiker-assessment_subheader {
+    font-size: 18px;
+  }
+  .hiker-assessment_quality__list {
+    margin-top: 20px;
+  }
+  .hiker-assessment_quality__list li {
+    font-size: 16px;
+  }
+  .hiker-assessment_quality__list li span {
+    font-size: 18px;
+  }
+  .hiker-assessment_quality__advice .tip .text {
+    font-size: 16px;
+  }
+  .hiker-assessment_links__ukraine a, .hiker-assessment_links__world a {
+    min-width: 90px;
+    font-size: 18px;
+  }
+  .hiker-assessment_links__ukraine p, .hiker-assessment_links__world p {
+    font-size: 16px;
+  }
+  .hiker-assessment_wish {
+    font-size: 16px;
+  }
+  .hiker-assessment_back {
+    font-size: 15px;
+  }
+  .hiking-gear_header {
+    font-size: 28px;
+  }
+  .hiking-gear_subheader {
+    font-size: 20px;
+  }
+  .hiking-gear_text {
+    font-size: 18px;
+  }
+  .hiking-gear_table tbody tr td {
+    min-width: 45px;
+    font-size: 14px;
+    max-height: 140px;
+    padding: 4px;
+  }
+  .hiking-gear_table tbody tr th {
+    font-size: 15px;
+  }
+  .hiking-gear_table tbody tr .lvl {
+    font-size: 14px;
+    padding: 0 2px;
+  }
+  .hiking-gear_platforms__title {
+    font-size: 20px;
+  }
+  .hiking-gear_platforms__text {
+    font-size: 16px;
+  }
+  .hiking-gear_platforms__links span a {
+    font-size: 16px;
+  }
+  .hiking-gear_platforms__links span p {
+    font-size: 14px;
+  }
+  .hiking-gear_back {
+    font-size: 15px;
+  }
 }
 @media (max-width: 767px) {
   .main {
@@ -1040,6 +1136,101 @@
   .article-image img {
     width: 300px;
   }
+  .hiker-assessment_header {
+    font-size: 28px;
+  }
+  .hiker-assessment_header.small {
+    font-size: 22px;
+  }
+  .hiker-assessment_subheader {
+    font-size: 16px;
+  }
+  .hiker-assessment_quality__list {
+    margin-top: 20px;
+  }
+  .hiker-assessment_quality__list li {
+    font-size: 14px;
+  }
+  .hiker-assessment_quality__list li span {
+    font-size: 16px;
+  }
+  .hiker-assessment_quality__advice .tip .text {
+    font-size: 16px;
+  }
+  .hiker-assessment_links__ukraine a, .hiker-assessment_links__world a {
+    min-width: 90px;
+    font-size: 17px;
+  }
+  .hiker-assessment_links__ukraine p, .hiker-assessment_links__world p {
+    font-size: 16px;
+  }
+  .hiker-assessment_wish {
+    font-size: 14px;
+  }
+  .hiker-assessment_back {
+    font-size: 14px;
+  }
+  .hiking-gear_header {
+    font-size: 28px;
+  }
+  .hiking-gear_subheader {
+    font-size: 20px;
+  }
+  .hiking-gear_text {
+    font-size: 18px;
+  }
+  .hiking-gear_table {
+    display: none;
+  }
+  .hiking-gear_table-alt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .hiking-gear_table-alt tr {
+    display: block;
+    margin-top: 10px;
+    background-color: rgba(25, 80, 63, 0.56);
+    border: 1px solid #FBD784;
+    border-radius: 15px;
+    padding: 5px;
+  }
+  .hiking-gear_table-alt tr td {
+    width: 100px;
+    font-style: normal;
+    font-family: "Gilroy";
+    font-weight: 700;
+    line-height: 1.38;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 1.78;
+    padding: 0 8px 0 0;
+  }
+  .hiking-gear_table-alt tr th p {
+    font-style: normal;
+    font-family: "Gilroy";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    text-align: left;
+  }
+  .hiking-gear_platforms__title {
+    font-size: 20px;
+  }
+  .hiking-gear_platforms__text {
+    font-size: 16px;
+  }
+  .hiking-gear_platforms__links span a {
+    font-size: 16px;
+  }
+  .hiking-gear_platforms__links span p {
+    font-size: 14px;
+  }
+  .hiking-gear_back {
+    font-size: 15px;
+  }
 }
 @media (max-width: 575px) {
   .main {
@@ -1069,6 +1260,111 @@
   }
   .article-image img {
     width: 300px;
+  }
+  .hiker-assessment_header {
+    font-size: 20px;
+  }
+  .hiker-assessment_header.small {
+    font-size: 18px;
+  }
+  .hiker-assessment_subheader {
+    font-size: 15px;
+  }
+  .hiker-assessment_quality__list {
+    margin-top: 20px;
+  }
+  .hiker-assessment_quality__list li {
+    font-size: 14px;
+  }
+  .hiker-assessment_quality__list li span {
+    font-size: 16px;
+  }
+  .hiker-assessment_quality__advice .tip {
+    font-size: 16px;
+  }
+  .hiker-assessment_quality__advice .tip .text {
+    font-size: 14px;
+  }
+  .hiker-assessment_links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hiker-assessment_links__ukraine a, .hiker-assessment_links__world a {
+    min-width: 90px;
+    font-size: 15px;
+  }
+  .hiker-assessment_links__ukraine p, .hiker-assessment_links__world p {
+    font-size: 14px;
+  }
+  .hiker-assessment_wish {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .hiker-assessment_back {
+    font-size: 14px;
+  }
+  .hiking-gear_header {
+    font-size: 20px;
+  }
+  .hiking-gear_subheader {
+    font-size: 18px;
+  }
+  .hiking-gear_text {
+    font-size: 15px;
+  }
+  .hiking-gear_table-alt tr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: rgba(25, 80, 63, 0.56);
+    border: 1px solid #FBD784;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .hiking-gear_table-alt tr td {
+    width: auto;
+    font-size: 16px;
+    padding: 0;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  .hiking-gear_table-alt tr th p {
+    font-style: normal;
+    font-family: "Gilroy";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    text-align: left;
+  }
+  .hiking-gear_platforms__title {
+    font-size: 16px;
+  }
+  .hiking-gear_platforms__text {
+    font-size: 14px;
+  }
+  .hiking-gear_platforms__links {
+    margin-top: 10px;
+  }
+  .hiking-gear_platforms__links span {
+    align-items: center;
+    text-align: center;
+  }
+  .hiking-gear_platforms__links span a {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .hiking-gear_platforms__links span p {
+    font-size: 14px;
+    font-style: normal;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .hiking-gear_back {
+    font-size: 14px;
   }
 }
 .footer {
