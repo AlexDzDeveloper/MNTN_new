@@ -355,11 +355,11 @@
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  visibility: visible;
   width: 100%;
-}
-.article:nth-child(even) {
-  flex-direction: row-reverse;
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
 }
 .article-wrapper {
   position: relative;
@@ -452,9 +452,13 @@
 
 .hiker-assessment {
   display: flex;
-  display: none;
   flex-direction: column;
   justify-content: center;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+  width: 100%;
+  height: auto;
 }
 .hiker-assessment_header {
   margin-bottom: 27px;
@@ -866,6 +870,13 @@
   margin-top: 10px;
   height: 415px;
   width: 738px;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 @media (max-width: 1200px) {
