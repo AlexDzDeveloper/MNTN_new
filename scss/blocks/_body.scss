@@ -1,4 +1,5 @@
 @use "./nullstyle";
+@use "./keyframes";
 
 .main {
 	max-width: 1492px;
@@ -12,6 +13,10 @@
 	justify-content: space-between;
 	align-items: start;
 	flex-wrap: nowrap;
+	min-height: 824px;
+	// height: auto;
+	width: 100%;
+	margin: 0 auto;
 
 	&:nth-child(even) {
 		.article {
@@ -22,17 +27,20 @@
 }
 
 .article {
-	margin-bottom: 200px;
+	margin-bottom: 100px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	gap: 30px;
+	position: relative;
 	width: 100%;
 	height: auto;
 	visibility: visible;
 	opacity: 1;
-	transition: opacity 0.8s ease, visibility 0.8s ease;
+	transition: transform 0.8s ease, opacity 0.8s ease;
+	// transition: opacity 0.8s ease, visibility 0.8s ease;
+	// left: 0;
 
 	&-wrapper {
 		position: relative;
@@ -135,13 +143,27 @@
 
 .hiker-assessment {
 	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: center;
-	visibility: visible;
+	align-items: flex-start;
 	opacity: 1;
-	transition: opacity 0.8s ease, visibility 0.8s ease;
 	width: 100%;
+	max-width: 1462px;
 	height: auto;
+	visibility: hidden;
+	position: absolute;
+	right: 0;
+
+	// margin: 0 auto;
+	margin-bottom: 100px;
+	// transition: opacity 0.8s ease, visibility 0.8s ease;
+	transition: transform 0.8s ease, opacity 0.8s ease;
+
+	// visibility: visible;
+	// left: 0;
+	// width: 0;
+	// height: 0;
 
 	&_header {
 		margin-bottom: 27px;
@@ -735,7 +757,7 @@
 
 	.hiking-gear {
 		display: flex;
-		// display: none;
+		display: none;
 		flex-direction: column;
 		justify-content: center;
 

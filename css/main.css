@@ -330,6 +330,54 @@
     left: 17px;
   }
 }
+@keyframes hideArticle {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes showHiker {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes hideHiker {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes showArticle {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
 .main {
   max-width: 1492px;
   margin: 0 auto;
@@ -342,6 +390,9 @@
   justify-content: space-between;
   align-items: start;
   flex-wrap: nowrap;
+  min-height: 824px;
+  width: 100%;
+  margin: 0 auto;
 }
 .container:nth-child(even) .article {
   display: flex;
@@ -349,17 +400,18 @@
 }
 
 .article {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  position: relative;
   width: 100%;
   height: auto;
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.8s ease, visibility 0.8s ease;
+  transition: transform 0.8s ease, opacity 0.8s ease;
 }
 .article-wrapper {
   position: relative;
@@ -452,13 +504,19 @@
 
 .hiker-assessment {
   display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
-  visibility: visible;
+  align-items: flex-start;
   opacity: 1;
-  transition: opacity 0.8s ease, visibility 0.8s ease;
   width: 100%;
+  max-width: 1462px;
   height: auto;
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  margin-bottom: 100px;
+  transition: transform 0.8s ease, opacity 0.8s ease;
 }
 .hiker-assessment_header {
   margin-bottom: 27px;
@@ -961,6 +1019,7 @@
   }
   .hiking-gear {
     display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
   }
