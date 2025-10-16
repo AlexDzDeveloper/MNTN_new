@@ -10,20 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// articleBtn.addEventListener('click', (e) => {
 	// 	const parent = e.target.closest('.article');
-
-	// 	// console.log(parent);
 	// 	//Через клас працює
 	// 	// parent.classList.add('hidden');
 	// 	// hiker.classList.remove('hidden');
-
-	// 	//Через анімацію
-	// 	parent.style.animation = "hideArticle 500ms ease 1 normal running 0s forwards";
-	// 	parent.addEventListener('animationend', () => {
-	// 		parent.style.display = 'none';
-	// 		hiker.style.display = 'flex';
-	// 	}, { once: true })
-	// 	hiker.style.animation = "showHiker 500ms ease 1 normal running 0s forwards";
-
 	// });
 
 	// hikerBtn.addEventListener('click', () => {
@@ -32,15 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	// 	// hiker.classList.add('hidden');
 	// 	// console.log(article);
 	// 	const parent = article.closest('.article');
-
-	// 	//Через анімацію
-	// 	hiker.style.animation = "hideHiker 500ms linear 1 normal running 0s forwards";
-	// 	hiker.addEventListener('animationend', () => {
-	// 		hiker.style.display = 'none';
-	// 		parent.style.display = 'flex';
-	// 		parent.style.right = '0';
-	// 	}, { once: true })
-	// 	parent.style.animation = "showArticle 500ms normal 1 normal running 0s forwards";
 	// })
 
 	function restartAnimation(el, animationStr) {

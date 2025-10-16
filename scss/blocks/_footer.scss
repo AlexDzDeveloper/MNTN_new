@@ -16,6 +16,7 @@
 		font-size: 18px;
 		font-weight: bold;
 		margin-bottom: 120px;
+		min-height: 400px;
 	}
 
 	&-copyright {
@@ -30,6 +31,7 @@
 			font-size: 32px;
 			font-weight: bold;
 			margin-bottom: 24px;
+			color: nullstyle.$main-color;
 		}
 
 		&_desc {
@@ -132,16 +134,16 @@
 				bottom: 0px;
 			}
 		}
-	}
 
-	&_title {
-		margin-top: 0;
-		margin-bottom: 24px;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 24px;
-		line-height: 1.33;
-		color: nullstyle.$main-color;
+		&_title {
+			margin-top: 0;
+			margin-bottom: 24px;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 1.33;
+			color: nullstyle.$main-color;
+		}
 	}
 }
 
