@@ -514,7 +514,6 @@
   height: auto;
   visibility: hidden;
   position: absolute;
-  right: 0;
   margin-bottom: 100px;
   transition: transform 0.8s ease, opacity 0.8s ease;
 }
@@ -557,7 +556,7 @@
   font-size: 21px;
   line-height: 1.4;
   color: #FBD784;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .hiker-assessment_quality__advice {
   display: flex;
@@ -596,6 +595,11 @@
   line-height: 1.2;
   color: #32a9ef;
   text-decoration: none;
+}
+.hiker-assessment_links__ukraine a:hover, .hiker-assessment_links__world a:hover {
+  text-decoration: underline;
+  color: #FBD784;
+  transition: 0.3s all ease;
 }
 .hiker-assessment_links__ukraine p, .hiker-assessment_links__world p {
   font-family: "Conqueror Text Bold";
@@ -798,7 +802,6 @@
   height: auto;
   visibility: hidden;
   position: absolute;
-  right: 0;
   margin-bottom: 100px;
   transition: transform 0.8s ease, opacity 0.8s ease;
 }
@@ -835,7 +838,7 @@
   text-align: center;
 }
 .learn-map_text-block__reader-plan {
-  margin-top: 10px;
+  margin-top: 40px;
   font-family: "Conqueror Text Bold";
   font-style: italic;
   font-weight: 500;
@@ -843,7 +846,6 @@
   line-height: 1.6;
   letter-spacing: -1px;
   color: #FBD784;
-  text-align: center;
 }
 .learn-map_text-block__reader-list {
   margin-top: 20px;
@@ -1099,6 +1101,9 @@
   }
 }
 @media (max-width: 991px) {
+  .container {
+    min-height: 600px;
+  }
   .main {
     max-width: 991px;
   }
@@ -1711,6 +1716,7 @@
     margin-bottom: 0;
     font-size: 16px;
     padding: 20px;
+    min-height: 300px;
   }
   .footer-copyright {
     height: 220px;
@@ -1757,6 +1763,7 @@
   }
   .footer .container {
     font-size: 14px;
+    min-height: 250px;
   }
   .footer-copyright {
     max-height: 180px;
