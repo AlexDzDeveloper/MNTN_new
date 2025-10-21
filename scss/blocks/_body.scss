@@ -21,6 +21,9 @@
 		.article {
 			display: flex;
 			flex-direction: row-reverse;
+			@media(max-width: 575px) {
+				flex-direction: column;
+			}
 		}
 	}
 }
@@ -896,14 +899,16 @@
 
 @media (max-width: 991px) {
 	.container {
-		min-height: 600px;
+		min-height: 690px;
+		// height: 100%;
 	}
 
 	.main {
-		max-width: 991px;
+		max-width: 951px;
 	}
 
 	.article {
+		width: calc(100% - 40px);
 		margin-bottom: 100px;
 
 		&-wrapper {
@@ -950,6 +955,7 @@
 	}
 
 	.hiker-assessment {
+		width: calc(100% - 40px);
 
 		&_header {
 			font-size: 28px;
@@ -1011,6 +1017,8 @@
 	}
 
 	.hiking-gear {
+		width: calc(100% - 40px)
+
 		&_header {
 			font-size: 28px;
 		}
@@ -1074,6 +1082,7 @@
 	}
 
 	.learn-map {
+		width: calc(100% - 40px);
 		flex-direction: column;
 		gap: 0;
 		&_text-block {
@@ -1091,6 +1100,7 @@
 			}
 
 			&__reader {
+				display: none;
 
 				&-list {
 				margin-top: 10px;
@@ -1123,7 +1133,7 @@
 			margin-bottom: 50px;
 			justify-content: center;
 			align-items: center;
-			width: 100%;
+			width: calc(100% - 40px);
 
 			&__title {
 				font-size: 25px;
@@ -1142,18 +1152,26 @@
 }
 
 @media (max-width: 767px) {
+	.container {
+		min-height: 560px;
+	}
+
 	.main {
 		max-width: 767px;
-		padding-left: 15px;
-		padding-right: 15px;
+		// padding-left: 15px;
+		// padding-right: 15px;
 	}
 
 	.article {
-		margin-bottom: 80px;
+		// max-width: 536px;
+		width: 100%;
+		margin-bottom: 50px;
+		gap: 5px;
 
 		&-wrapper {
-			padding-left: 20px;
-			padding-right: 20px;
+			// padding-left: 20px;
+			// padding-right: 20px;
+			padding: 0 10px;
 			max-width: 767px;
 
 			&::before {
@@ -1214,6 +1232,7 @@
 			}
 
 			&__advice {
+				display: none;
 				.tip {
 					.text {
 						font-size: 16px;
@@ -1236,6 +1255,7 @@
 		}
 
 		&_wish {
+			display: none;
 			font-size: 14px;
 		}
 
@@ -1248,8 +1268,10 @@
 	}
 
 	.hiking-gear {
+		max-width: 536px;
 		&_header {
 			font-size: 28px;
+			margin-bottom: 10px;
 		}
 
 		&_subheader {
@@ -1257,6 +1279,7 @@
 		}
 
 		&_text {
+			display: none;
 			font-size: 18px;
 		}
 
@@ -1278,13 +1301,13 @@
 				td {
 					width: 100px;
 					font-weight: 700;
-					font-size: 18px;
+					font-size: 16px;
 					padding: 0 8px 0 0;
 				}
 
 				th {
 					p {
-						font-size: 16px;
+						font-size: 14px;
 						text-align: left;
 						font-weight: 400;
 					}
@@ -1293,6 +1316,7 @@
 		}
 
 		&_platforms {
+			display: none;
 
 			&__title {
 				font-size: 20px;
@@ -1326,15 +1350,17 @@
 	.learn-map {
 		flex-direction: column;
 		gap: 0;
+		margin-bottom: 0;
 
 		&_text-block {
 
 			&__title {
 				font-size: 28px;
-				margin-bottom: 20px;
+				margin-bottom: 0;
 			}
 
 			&__text {
+				display: none;
 				font-size: 18px;
 			}
 
@@ -1368,7 +1394,7 @@
 			}
 
 			&__back {
-				top: 415px;
+				top: 435px;
 				font-size: 15px;
 
 				&::before {
@@ -1377,6 +1403,7 @@
 		}
 
 		&_video {
+			width: 100%;
 			&__title {
 				font-size: 20px;
 			}
@@ -1399,12 +1426,17 @@
 		max-width: 575px;
 	}
 
+	.container {
+		min-height: 810px;
+	}
+
 	.article {
+
 		flex-direction: column;
 
-		&:nth-child(even) {
-			flex-direction: column;
-		}
+		// &:nth-child(even) {
+		// 	flex-direction: column;
+		// }
 
 		&-wrapper {
 			max-width: 574px;
@@ -1581,7 +1613,9 @@
 			}
 
 			&__text {
+				display: block;
 				font-size: 15px;
+				margin-top: 10px;
 			}
 
 			&__subheader {
@@ -1589,7 +1623,11 @@
 			}
 
 			&__reader {
+				display: flex;
+				flex-direction: column;
+
 				&-plan {
+					margin-top: 20px;
 					font-size: 18px;
 				}
 

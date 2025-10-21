@@ -398,6 +398,11 @@
   display: flex;
   flex-direction: row-reverse;
 }
+@media (max-width: 575px) {
+  .container:nth-child(even) .article {
+    flex-direction: column;
+  }
+}
 
 .article {
   margin-bottom: 100px;
@@ -1102,12 +1107,13 @@
 }
 @media (max-width: 991px) {
   .container {
-    min-height: 600px;
+    min-height: 690px;
   }
   .main {
-    max-width: 991px;
+    max-width: 951px;
   }
   .article {
+    width: calc(100% - 40px);
     margin-bottom: 100px;
   }
   .article-wrapper {
@@ -1141,6 +1147,9 @@
   }
   .article-image img {
     width: 400px;
+  }
+  .hiker-assessment {
+    width: calc(100% - 40px);
   }
   .hiker-assessment_header {
     font-size: 28px;
@@ -1176,8 +1185,9 @@
   .hiker-assessment_back {
     font-size: 15px;
   }
-  .hiking-gear_header {
-    font-size: 28px;
+  .hiking-gear {
+    width: calc(100% - 40px) .hiking-gear _header;
+    width-font-size: 28px;
   }
   .hiking-gear_subheader {
     font-size: 20px;
@@ -1214,6 +1224,7 @@
     font-size: 15px;
   }
   .learn-map {
+    width: calc(100% - 40px);
     flex-direction: column;
     gap: 0;
   }
@@ -1225,6 +1236,9 @@
   }
   .learn-map_text-block__subheader {
     font-size: 20px;
+  }
+  .learn-map_text-block__reader {
+    display: none;
   }
   .learn-map_text-block__reader-list {
     margin-top: 10px;
@@ -1246,7 +1260,7 @@
     margin-bottom: 50px;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: calc(100% - 40px);
   }
   .learn-map_video__title {
     font-size: 25px;
@@ -1260,17 +1274,19 @@
   }
 }
 @media (max-width: 767px) {
+  .container {
+    min-height: 560px;
+  }
   .main {
     max-width: 767px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
   .article {
-    margin-bottom: 80px;
+    width: 100%;
+    margin-bottom: 50px;
+    gap: 5px;
   }
   .article-wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 10px;
     max-width: 767px;
   }
   .article-wrapper::before {
@@ -1312,6 +1328,9 @@
   .hiker-assessment_quality__list li span {
     font-size: 16px;
   }
+  .hiker-assessment_quality__advice {
+    display: none;
+  }
   .hiker-assessment_quality__advice .tip .text {
     font-size: 16px;
   }
@@ -1323,18 +1342,24 @@
     font-size: 16px;
   }
   .hiker-assessment_wish {
+    display: none;
     font-size: 14px;
   }
   .hiker-assessment_back {
     font-size: 14px;
   }
+  .hiking-gear {
+    max-width: 536px;
+  }
   .hiking-gear_header {
     font-size: 28px;
+    margin-bottom: 10px;
   }
   .hiking-gear_subheader {
     font-size: 20px;
   }
   .hiking-gear_text {
+    display: none;
     font-size: 18px;
   }
   .hiking-gear_table {
@@ -1354,13 +1379,16 @@
   .hiking-gear_table-alt tr td {
     width: 100px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     padding: 0 8px 0 0;
   }
   .hiking-gear_table-alt tr th p {
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
     font-weight: 400;
+  }
+  .hiking-gear_platforms {
+    display: none;
   }
   .hiking-gear_platforms__title {
     font-size: 20px;
@@ -1380,12 +1408,14 @@
   .learn-map {
     flex-direction: column;
     gap: 0;
+    margin-bottom: 0;
   }
   .learn-map_text-block__title {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
   .learn-map_text-block__text {
+    display: none;
     font-size: 18px;
   }
   .learn-map_text-block__subheader {
@@ -1408,8 +1438,11 @@
     font-size: 16px;
   }
   .learn-map_text-block__back {
-    top: 415px;
+    top: 435px;
     font-size: 15px;
+  }
+  .learn-map_video {
+    width: 100%;
   }
   .learn-map_video__title {
     font-size: 20px;
@@ -1426,10 +1459,10 @@
   .main {
     max-width: 575px;
   }
-  .article {
-    flex-direction: column;
+  .container {
+    min-height: 810px;
   }
-  .article:nth-child(even) {
+  .article {
     flex-direction: column;
   }
   .article-wrapper {
@@ -1546,12 +1579,19 @@
     font-size: 20px;
   }
   .learn-map_text-block__text {
+    display: block;
     font-size: 15px;
+    margin-top: 10px;
   }
   .learn-map_text-block__subheader {
     font-size: 18px;
   }
+  .learn-map_text-block__reader {
+    display: flex;
+    flex-direction: column;
+  }
   .learn-map_text-block__reader-plan {
+    margin-top: 20px;
     font-size: 18px;
   }
   .learn-map_text-block__reader-list ul p {
