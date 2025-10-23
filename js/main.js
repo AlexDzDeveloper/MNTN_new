@@ -1,3 +1,4 @@
+import "./blocks/_menu.js";
 import "./blocks/_article.js";
 import "./blocks/_hiker-assessment.js";
 import "./blocks/_hiking-gear.js";

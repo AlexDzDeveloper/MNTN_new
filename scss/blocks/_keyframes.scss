@@ -49,3 +49,21 @@
     visibility: visible;
   }
 }
+
+@keyframes fadeOut {
+	// 0% {
+	// 	opacity: 1;
+	// }
+	// 50% {
+	// 	opacity: .75;
+	// }
+	// 100% {
+	// 	opacity: 0;
+	// }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: .75;
+	}
+}
