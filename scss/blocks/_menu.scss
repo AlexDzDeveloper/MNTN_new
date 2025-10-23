@@ -1,7 +1,12 @@
 @use "./nullstyle";
+@use "./keyframes";
 
 .hamburger {
 	display: none;
+}
+
+.menu {
+	visibility: hidden;
 }
 
 @media (max-width: 575px) {
@@ -15,6 +20,7 @@
 		top: 45px;
 		right: 20px;
 		height: 18px;
+		z-index: 100;
 		cursor: pointer;
 
 		&:hover {
@@ -35,19 +41,61 @@
 		}
 	}
 
+	.account_mini {
+		margin-top: 20px;
+
+		// display: flex;
+		// justify-content: center;
+		// gap: 5px;
+
+		.text {
+			margin: 0 auto;
+			padding: 2px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			width: 180px;
+
+			font-family: 'Gilroy';
+			font-size: 17px;
+			font-weight: bold;
+			text-decoration: none;
+			color: #fff;
+			text-transform: uppercase;
+			transition: color 0.2s ease-in;
+
+			// &:active {
+			// }
+
+			a {
+				text-decoration: none;
+				color: #0c3e96;
+				font-size: 14px;
+
+				&:hover {
+					transform: translateY(-7px);
+					color: #fff;
+					text-decoration: underline;
+					transition: transform 0.2s ease-in;
+				}
+			}
+		}
+	}
+
 	.menu {
 		position: fixed;
-		top: 0;
-		left: -100%;
+		top: -100%;
+		left: 0;
 		width: 100%;
-		height: 100vh;
+		height: 12vh;
 		z-index: 10;
 		visibility: hidden;
 		opacity: 0;
-		transition: all .6s;
+		transition: all .4s;
 
 		&.active {
-			left: 0;
+			top: 0;
 			visibility: visible;
 			opacity: 1;
 		}
@@ -55,51 +103,55 @@
 		&__block {
 			position: relative;
 			width: 345px;
+			width: 100%;
 			height: 100%;
 			background-color: nullstyle.$main-color;
+			opacity: 0.9;
 			transition: all .6s;
-			padding-top: 140px;
-			padding-left: 40px;
+			padding-top: 5vh;
 		}
 
 		&__close {
 			position: absolute;
-			top: 25px;
+			top: 2vh;
 			right: 25px;
-			cursor: pointer;
 
-			&:hover {
-				path {
-					transition: all .5s;
-					fill: #fff;
-				}
+			svg {
+				width: 20px;
+				height: 20px;
 			}
+
+			path {
+				transition: all .5s;
+				fill: #fff;
+			}
+			cursor: pointer;
 		}
 		&__list {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: 30px;
+			padding: 0 20px;
 			list-style-type: none;
-			padding-left: 35px;
 		}
 		&__link {
 			position: relative;
-			font-size: 24px;
+			font-size: 14px;
 			font-weight: 700;
 			text-transform: uppercase;
-			margin-top: 15px;
-
-			&:first-child {
-				margin-top: 0;
-			}
 
 			&::before {
 				content:'';
 				position: absolute;
-				left: -35px;
-				top: 10px;
-				width: 15px;
-				height: 15px;
+				left: -15px;
+				top: 3px;
+				width: 8px;
+				height: 8px;
 				border-radius: 50%;
 				border: 1px solid #000;
-				transition: all .6s;
+				transition: all .3s;
 			}
 
 			&:hover {
@@ -110,26 +162,12 @@
 			}
 
 			a {
-				color: #fff;
-			}
-		}
+				color: #0c3e96;
+				text-decoration: none;
 
-		&__social {
-			position: absolute;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			width: 90px;
-			bottom: 50px;
-			left: 50%;
-			transform: translateX(-50%);
-
-			&_item {
 				&:hover {
-					path {
-						transition: all .5s;
-						fill: #fff;
-					}
+					color: #fff;
+					text-decoration: underline;
 				}
 			}
 		}
@@ -140,8 +178,15 @@
 			left: 0;
 			width: 100%;
 			height: 100vh;
-			background-color: #fff;
-			opacity: .75;
+			background: linear-gradient(
+				to bottom,
+				rgba(255, 255, 255, 0.8),
+				rgba(255, 255, 255, 0)
+			);
+			animation-name: fadeOut;
+			animation-duration: 2s;
+  			animation-timing-function: ease-in-out;
+			animation-fill-mode: forwards;
 			z-index: -1;
 		}
 	}
